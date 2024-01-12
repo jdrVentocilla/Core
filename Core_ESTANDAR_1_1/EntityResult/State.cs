@@ -5,9 +5,8 @@ namespace Core.EntityResult
     {
         ErrorValidation,
         OkNotContent,
-        ErrorNotContent,
+        Error,
         Ok,
-        Ninguno,
-
+        
     }
 }
