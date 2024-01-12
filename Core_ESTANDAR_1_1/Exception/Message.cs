@@ -31,27 +31,19 @@ namespace Core.GestionDeExcepciones
 
         #region Constructores
 
-        public Message()
-        {
-            
-            this.Description = "";
-            this.Detail = "";
-            this.Action = "";
-            
-        }
-        public Message(string description, string detail ,string action )
+       
+        public Message(string description, string detail  )
         {
             this.Description = description;
             this.Detail = detail;
-            this.Action = action;
+           
         }
-       
-        public void LimpiarMensaje()
+
+        public Message(string description)
         {
-            this.Description = "";
-            this.Detail = "";
-            this.Action = "";
+            this.Description = description;
         }
+
 
         #endregion
 

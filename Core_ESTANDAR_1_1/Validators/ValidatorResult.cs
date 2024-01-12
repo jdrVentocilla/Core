@@ -16,7 +16,6 @@ namespace Core.Validators
             errors = new List<string>();
         }
 
-
         public string GetStringError() {
 
             string errorCadena = "";
@@ -34,7 +33,6 @@ namespace Core.Validators
             }
             return errorCadena;
         }
-
         public string GetLastMessageError()
         {
             if (errors.Count==0)
