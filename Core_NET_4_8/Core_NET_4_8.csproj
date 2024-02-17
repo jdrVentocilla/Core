@@ -57,6 +57,10 @@
     <Compile Include="Files\ExportObject.cs" />
     <Compile Include="Files\FIleCompression.cs" />
     <Compile Include="Files\Format.cs" />
+    <Compile Include="InfraestructureOptimized\Espanol\IRepositoryAdd.cs" />
+    <Compile Include="InfraestructureOptimized\Espanol\IRepositoryGeneric.cs" />
+    <Compile Include="InfraestructureOptimized\Espanol\IRepositorySearch.cs" />
+    <Compile Include="InfraestructureOptimized\Espanol\IRepositoryUpdate.cs" />
     <Compile Include="InfraestructureOptimized\IRepositoryAdd.cs" />
     <Compile Include="InfraestructureOptimized\IRepositoryGeneric.cs" />
     <Compile Include="InfraestructureOptimized\IRepositorySearch.cs" />
