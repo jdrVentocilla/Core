@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core
+﻿namespace Core
 {
     public class MensajePredeterminado
     {
@@ -32,11 +28,11 @@ namespace Core
         public const string UsuarioAdministradorProtegido = "Usuario administrador protegido.";
         #endregion
 
-     
+
         #region Script
         public const string ScriptEjecutadoConExito = "Script ejecutado con éxito.";
         public const string ErrorAlEjecutarScript = "Error al ejecutar el script.";
-        public const string BaseDeDatosActualizada= "La base de datos se encuentra actualizada.";
+        public const string BaseDeDatosActualizada = "La base de datos se encuentra actualizada.";
         #endregion
 
 

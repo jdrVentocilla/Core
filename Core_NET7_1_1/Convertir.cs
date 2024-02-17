@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core
 {
@@ -148,7 +144,7 @@ namespace Core
             }
             return propiedadTexDevuelto;
         }
-       
+
         public static string FechaA_PropiedadTextDeMaskedTextBox(DateTime? fechaAConvertir)
         {
             string propiedadTexDevuelto = "";
@@ -330,7 +326,7 @@ namespace Core
                 else
                 {
                     return valor.ToString();
-                } 
+                }
             }
             catch
             {
@@ -377,6 +373,6 @@ namespace Core
 
 
         }
-     
+
     }
 }

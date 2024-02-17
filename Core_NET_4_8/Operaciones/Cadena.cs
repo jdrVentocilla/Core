@@ -35,7 +35,7 @@ namespace Core.Operaciones
             bool resultado = false;
             try
             {
-                if (cadena==null)
+                if (cadena == null)
                 {
                     resultado = true;
                 }
@@ -49,7 +49,7 @@ namespace Core.Operaciones
                     {
                         resultado = true;
                     }
-                }                
+                }
             }
             catch
             {
@@ -127,7 +127,7 @@ namespace Core.Operaciones
             string cadenaDevuelta = cadena;
             try
             {
-                if (cadena.Substring(0,1)=="\n")
+                if (cadena.Substring(0, 1) == "\n")
                 {
                     cadenaDevuelta = cadena.Substring(1, cadena.Length - 1);
                 }
@@ -171,7 +171,7 @@ namespace Core.Operaciones
             {
                 return null;
             }
-            
+
         }
 
         public static string ConvertirNullIntAString(int? cadena)

@@ -7,6 +7,6 @@ namespace Core.EntityResult
         OkNotContent,
         Error,
         Ok,
-        
+
     }
 }

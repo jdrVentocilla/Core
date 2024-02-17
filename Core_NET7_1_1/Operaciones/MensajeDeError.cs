@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Core.Operaciones
 {
@@ -46,7 +42,7 @@ namespace Core.Operaciones
         }
 
 
-        public static void MostrarNotificacionEnComputadora(string mensaje1 ,string mensaje2)
+        public static void MostrarNotificacionEnComputadora(string mensaje1, string mensaje2)
         {
             //for (int i = 0; i < 3; i++)
             //{
@@ -69,7 +65,7 @@ namespace Core.Operaciones
             //    {
             //        var notification2 = new System.Windows.Forms.NotifyIcon()
             //        {
-                        
+
             //            Visible = true,
             //            Icon = System.Drawing.SystemIcons.Information,
             //            BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Warning,
@@ -85,7 +81,7 @@ namespace Core.Operaciones
 
             //    System.Threading.Thread.Sleep(1000*60*1);
             //}
-       
+
 
 
 

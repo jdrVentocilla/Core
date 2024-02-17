@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Core.Seguridad.Cifrado
 {
@@ -21,7 +21,7 @@ namespace Core.Seguridad.Cifrado
             {
                 textEncrypt = "";
             }
-            return textEncrypt;            
+            return textEncrypt;
         }
 
         private static byte[] Encrypt(string text, string key, int iterations)
@@ -41,11 +41,11 @@ namespace Core.Seguridad.Cifrado
         }
 
         public static bool CompareHash(string hashInit, string hashFinal)
-        { 
+        {
             byte[] _objhashFinal = Convert.FromBase64String(hashFinal);
             byte[] _objHashInicial = Convert.FromBase64String(hashInit);
             return CompareByteArray(_objHashInicial, _objhashFinal);
-        } 
+        }
 
         private static bool CompareByteArray(Byte[] arrayA, Byte[] arrayB)
         {

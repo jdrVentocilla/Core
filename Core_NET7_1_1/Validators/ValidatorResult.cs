@@ -1,15 +1,13 @@
-﻿using Core.GestionDeExcepciones;
-using Core.Operaciones;
+﻿using Core.Operaciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Core.Validators
 {
     public class ValidatorResult
     {
-        public List<string> errors { get;  set; }
+        public List<string> errors { get; set; }
         public bool result { get { return !errors.Any(); } }
 
         public ValidatorResult()
@@ -18,7 +16,8 @@ namespace Core.Validators
         }
 
 
-        public string GetStringError() {
+        public string GetStringError()
+        {
 
             string errorCadena = "";
             foreach (string error in errors)
@@ -31,20 +30,20 @@ namespace Core.Validators
                 {
                     errorCadena = $"{error}";
                 }
-               
+
             }
             return errorCadena;
         }
 
         public string GetLastMessageError()
         {
-            if (errors.Count==0)
+            if (errors.Count == 0)
             {
                 return "";
             }
-            
 
-            return errors[errors.Count-1];
+
+            return errors[errors.Count - 1];
         }
 
         public string GetFirstMessageError()
@@ -53,7 +52,7 @@ namespace Core.Validators
             {
                 return "";
             }
-                      
+
             return errors[0];
         }
 

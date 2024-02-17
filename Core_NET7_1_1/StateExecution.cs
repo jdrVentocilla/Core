@@ -1,21 +1,19 @@
-﻿using System;
+﻿using Core.GestionDeExcepciones;
 using System.Collections.Generic;
-using System.Linq;
-using Core.GestionDeExcepciones;
 
 
 namespace Core
 {
     public class StateExecution<T>
     {
-       
+
         public State StateType { get; set; }
         public bool Status { get; set; }
-       
+
         public Message MessageState { get; set; }
         public List<string> Details { get; set; }
         public T Data { get; set; }
-             
+
 
         public StateExecution()
         {
@@ -35,7 +33,7 @@ namespace Core
         }
 
 
-      
+
     }
 
     public class StateExecution
@@ -46,7 +44,7 @@ namespace Core
 
         public Message MessageState { get; set; }
         public List<string> Details { get; set; }
-        
+
 
         public StateExecution()
         {

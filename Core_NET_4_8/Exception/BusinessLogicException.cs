@@ -3,7 +3,7 @@
 
 namespace Core.GestionDeExcepciones
 {
-   public class BusinessLogicException : Exception
+    public class BusinessLogicException : Exception
     {
 
         public Message mensajeDeValidacion;
@@ -13,6 +13,6 @@ namespace Core.GestionDeExcepciones
             this.mensajeDeValidacion = mensaje;
         }
 
-        
+
     }
 }

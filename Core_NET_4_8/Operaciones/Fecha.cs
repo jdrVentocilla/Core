@@ -252,43 +252,56 @@ namespace Core.Operaciones
 
             switch (NumeroMEs)
             {
-                case 1: nombreMes = "ENERO";
+                case 1:
+                    nombreMes = "ENERO";
                     break;
 
-                case 2: nombreMes = "FEBRERO";
+                case 2:
+                    nombreMes = "FEBRERO";
                     break;
 
-                case 3: nombreMes = "MARZO";
+                case 3:
+                    nombreMes = "MARZO";
                     break;
 
-                case 4: nombreMes = "ABRIL";
+                case 4:
+                    nombreMes = "ABRIL";
                     break;
 
-                case 5: nombreMes = "MAYO";
+                case 5:
+                    nombreMes = "MAYO";
                     break;
 
-                case 6: nombreMes = "JUNIO";
+                case 6:
+                    nombreMes = "JUNIO";
                     break;
 
-                case 7: nombreMes = "JULIO";
+                case 7:
+                    nombreMes = "JULIO";
                     break;
 
-                case 8: nombreMes = "AGOSTO";
+                case 8:
+                    nombreMes = "AGOSTO";
                     break;
 
-                case 9: nombreMes = "SEPTIEMBRE";
+                case 9:
+                    nombreMes = "SEPTIEMBRE";
                     break;
 
-                case 10: nombreMes = "OCTUBRE";
+                case 10:
+                    nombreMes = "OCTUBRE";
                     break;
 
-                case 11: nombreMes = "NOVIEMBRE";
+                case 11:
+                    nombreMes = "NOVIEMBRE";
                     break;
 
-                case 12: nombreMes = "DICIEMBRE";
+                case 12:
+                    nombreMes = "DICIEMBRE";
                     break;
 
-                default: nombreMes = "";
+                default:
+                    nombreMes = "";
                     break;
 
 
@@ -371,16 +384,16 @@ namespace Core.Operaciones
 
         public static DateTime FechaEnZonaHorariaPeru()
         {
-           
+
             DateTime fechaActual = DateTime.Now;
             TimeZoneInfo zonaHorariaPeru;
             if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                 zonaHorariaPeru = TimeZoneInfo.FindSystemTimeZoneById("America/Bogota");
+                zonaHorariaPeru = TimeZoneInfo.FindSystemTimeZoneById("America/Bogota");
             }
             else
             {
-                 zonaHorariaPeru = TimeZoneInfo.FindSystemTimeZoneById("SA Pacific Standard Time");
+                zonaHorariaPeru = TimeZoneInfo.FindSystemTimeZoneById("SA Pacific Standard Time");
             }
             TimeZoneInfo timeZoneInfoActual = TimeZoneInfo.Local;
             if (timeZoneInfoActual.DisplayName == zonaHorariaPeru.DisplayName)

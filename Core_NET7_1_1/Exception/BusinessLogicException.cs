@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Core.GestionDeExcepciones
 {
-   public class BusinessLogicException : Exception
+    public class BusinessLogicException : Exception
     {
 
         public Message mensajeDeValidacion = new Message();
@@ -14,6 +12,6 @@ namespace Core.GestionDeExcepciones
             this.mensajeDeValidacion = mensaje;
         }
 
-        
+
     }
 }

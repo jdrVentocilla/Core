@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Archivos
+﻿namespace Core.Archivos
 {
     public class ExportObject
     {

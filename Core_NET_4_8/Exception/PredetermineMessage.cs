@@ -29,11 +29,11 @@ namespace Core
         public const string UsuarioSinCredenciales = "Usted no tiene permisos para realizar esta acción.";
         public const string UsuarioAdministradorProtegido = "Usuario administrador protegido.";
         #endregion
-             
+
         #region Script
         public const string ScriptEjecutadoConExito = "Script ejecutado con éxito.";
         public const string ErrorAlEjecutarScript = "Error al ejecutar el script.";
-        public const string BaseDeDatosActualizada= "La base de datos se encuentra actualizada.";
+        public const string BaseDeDatosActualizada = "La base de datos se encuentra actualizada.";
         #endregion
 
 

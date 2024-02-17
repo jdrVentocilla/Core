@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Security.Cryptography;
 
 namespace Core.Seguridad.Cifrado
 {
-   public  class CommonCipher
+    public class CommonCipher
 
     {
 
@@ -31,14 +28,14 @@ namespace Core.Seguridad.Cifrado
         public static string Encrypt(string text)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(text);
-          
+
             return Convert.ToBase64String(bytes, 0, bytes.Length);
         }
 
         public static string Decrypt(string textEncrypt)
         {
             byte[] inputBuffer = Convert.FromBase64String(textEncrypt);
-           
+
             return Encoding.UTF8.GetString(inputBuffer);
         }
 

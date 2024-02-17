@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-
-namespace Core.GestionDeExcepciones
+﻿namespace Core.GestionDeExcepciones
 {
     public class Message
     {
         #region Tipos Enumerados
-       
-      
-        
+
+
+
 
         #endregion
 
@@ -24,29 +16,29 @@ namespace Core.GestionDeExcepciones
         #endregion
 
         #region Propiedades
-        public string Description  { get; set; }
+        public string Description { get; set; }
         public string Detail { get; set; }
         public string Action { get; set; }
-        
+
         #endregion
 
         #region Constructores
 
         public Message()
         {
-            
+
             this.Description = "";
             this.Detail = "";
             this.Action = "";
-            
+
         }
-        public Message(string description, string detail ,string action )
+        public Message(string description, string detail, string action)
         {
             this.Description = description;
             this.Detail = detail;
             this.Action = action;
         }
-       
+
         public void LimpiarMensaje()
         {
             this.Description = "";

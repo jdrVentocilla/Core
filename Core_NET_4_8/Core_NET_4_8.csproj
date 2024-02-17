@@ -57,10 +57,10 @@
     <Compile Include="Files\ExportObject.cs" />
     <Compile Include="Files\FIleCompression.cs" />
     <Compile Include="Files\Format.cs" />
-    <Compile Include="InfraestructureEF\IRepositoryAdd.cs" />
-    <Compile Include="InfraestructureEF\IRepositoryGeneric.cs" />
-    <Compile Include="InfraestructureEF\IRepositorySearch.cs" />
-    <Compile Include="InfraestructureEF\IRepositoryUpdate.cs" />
+    <Compile Include="InfraestructureOptimized\IRepositoryAdd.cs" />
+    <Compile Include="InfraestructureOptimized\IRepositoryGeneric.cs" />
+    <Compile Include="InfraestructureOptimized\IRepositorySearch.cs" />
+    <Compile Include="InfraestructureOptimized\IRepositoryUpdate.cs" />
     <Compile Include="Infraestructure\V1\Repository\IManageBDRepository.cs" />
     <Compile Include="Infraestructure\V1\Repository\IRepositoryBase.cs" />
     <Compile Include="Infraestructure\V1\Repository\RepositoryBase.cs" />

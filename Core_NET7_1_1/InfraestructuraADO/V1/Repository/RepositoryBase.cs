@@ -1,8 +1,4 @@
 ﻿using MySqlConnector;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
 
 namespace Core.InfraestructuraADO.V1.Repository
 {

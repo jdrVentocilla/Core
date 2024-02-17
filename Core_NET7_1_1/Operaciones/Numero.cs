@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
 namespace Core.Operaciones
@@ -40,24 +35,24 @@ namespace Core.Operaciones
         }
         public static bool EsNulo(double? numero)
         {
-             bool resultado = false;
+            bool resultado = false;
             try
             {
-                if (numero==null)
+                if (numero == null)
                 {
                     resultado = true;
                 }
                 else
                 {
-                    if (numero.ToString()=="")
+                    if (numero.ToString() == "")
                     {
                         resultado = true;
                     }
                     else
                     {
-                        
+
                     }
-                }                
+                }
             }
             catch
             {
@@ -67,16 +62,16 @@ namespace Core.Operaciones
         }
         public static bool EsNulo(int? numero)
         {
-             bool resultado = false;
+            bool resultado = false;
             try
             {
-                if (numero==null)
+                if (numero == null)
                 {
                     resultado = true;
                 }
                 else
                 {
-                    if (numero.ToString()=="")
+                    if (numero.ToString() == "")
                     {
                         resultado = true;
                     }
@@ -84,14 +79,14 @@ namespace Core.Operaciones
                     {
                         resultado = false;
                     }
-                }                
+                }
             }
             catch
             {
                 resultado = false;
             }
             return resultado;
-        } 
+        }
 
         public static int? ConvertirCeroANulo(int numero)
         {
@@ -232,7 +227,7 @@ namespace Core.Operaciones
             if (CantidadDeDecimales == 1)
             {
                 return "0,0.0";
-            } 
+            }
             else if (CantidadDeDecimales == 2)
             {
                 return "0,0.00";

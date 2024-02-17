@@ -1,8 +1,7 @@
 ﻿using System;
-
-using System.Reflection;
-using System.Linq.Expressions;
 using System.ComponentModel;
+using System.Linq.Expressions;
+using System.Reflection;
 
 namespace Core.Reflexion
 {
@@ -31,7 +30,7 @@ namespace Core.Reflexion
             {
                 case ExpressionType.MemberAccess:
                     return (PropertyInfo)((MemberExpression)body).Member;
-                    
+
                 default:
                     throw new InvalidOperationException();
             }

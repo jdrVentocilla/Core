@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Drawing.Imaging;
+using System.IO;
 
 
 namespace Core.Operaciones
@@ -109,8 +109,8 @@ namespace Core.Operaciones
             {
                 int originalWidth = imagen.Width;
                 int originalHeight = imagen.Height;
-                float percentWidth = (float)tamaño.Width / (float)originalWidth;
-                float percentHeight = (float)tamaño.Height / (float)originalHeight;
+                float percentWidth = tamaño.Width / (float)originalWidth;
+                float percentHeight = tamaño.Height / (float)originalHeight;
                 float percent = percentHeight < percentWidth ? percentHeight : percentWidth;
                 newWidth = (int)(originalWidth * percent);
                 newHeight = (int)(originalHeight * percent);
