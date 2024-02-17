@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 
 
-namespace Core.InfraestructuraEF
+namespace Core.InfraestructureOptimized
 {
     public interface IRepositorySearch<T> where T : class
     {

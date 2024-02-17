@@ -1,6 +1,6 @@
 ﻿
 
-namespace Core.InfraestructuraEF
+namespace Core.InfraestructureOptimized
 {
     public interface IRepositoryUpdate<T> where T : class
     {
